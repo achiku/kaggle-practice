@@ -74,5 +74,4 @@ def test_fill_nan_embarked(df, expected):
 def test_get_categorical_fare(df, expected):
     from feature import get_categorical_fare
     result = get_categorical_fare(df)
-    print(result)
     assert_series_equal(result, expected)
